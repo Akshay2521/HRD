@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--   Module 1-->
+    <group
+        android:id="@+id/module_org"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/organization"
+            android:title="Organization">
+            <menu>
+                <item
+                    android:id="@+id/organization_profile"
+                    android:title="Organization Profile" />
+                <item
+                    android:id="@+id/location"
+                    android:title="Location" />
+                <item
+                    android:id="@+id/holidayCalendar"
+                    android:title="Holiday Calendar" />
+                <item
+                    android:id="@+id/leaveType"
+                    android:title="Leave Type" />
+                <item
+                    android:id="@+id/emailTemplate"
+                    android:title="Email Template" />
+                <item
+                    android:id="@+id/clients"
+                    android:title="Clients" />
+                <item
+                    android:id="@+id/projects"
+                    android:title="Projects" />
+                <item
+                    android:id="@+id/expenseCategory"
+                    android:title="Expense Category" />
+            </menu>
+        </item>
+    </group>
+
+    <!-- Module 2 -->
+    <group
+        android:id="@+id/module_user_admin"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/user_administration"
+            android:title="User Administration">
+            <menu>
+                <item
+                    android:id="@+id/roles"
+                    android:title="Roles" />
+                <item
+                    android:id="@+id/users"
+                    android:title="Users" />
+            </menu>
+        </item>
+    </group>
+
+
+    <!-- Module 3 -->
+    <group
+        android:id="@+id/module_employees"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/employeeModule"
+            android:title="employees">
+            <menu>
+                <item
+                    android:id="@+id/employees"
+                    android:title="Employees" />
+                <item
+                    android:id="@+id/leaveBalance"
+                    android:title="Leave Balance" />
+            </menu>
+        </item>
+    </group>
+
+
+    <!-- Module 4 -->
+    <group
+        android:id="@+id/module_leaves"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/leavesModule"
+            android:title="Leaves">
+            <menu>
+                <item
+                    android:id="@+id/submitLeave"
+                    android:title="Submit Leave" />
+                <item
+                    android:id="@+id/authorizeLeave"
+                    android:title="Authorize Leave" />
+                <item
+                    android:id="@+id/reviewLeave"
+                    android:title="Review Leave" />
+            </menu>
+        </item>
+    </group>
+
+    <!-- Module 5 -->
+    <group
+        android:id="@+id/module_timesheet"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/timesheetModule"
+            android:title="Timesheet">
+            <menu>
+                <item
+                    android:id="@+id/submitTimesheet"
+                    android:title="Submit Timesheet" />
+                <item
+                    android:id="@+id/authorizeTimesheet"
+                    android:title="Authorize Timesheet" />
+                <item
+                    android:id="@+id/reviewTimesheet"
+                    android:title="Review Timesheet" />
+            </menu>
+        </item>
+    </group>
+
+    <!-- Module 6 -->
+    <group
+        android:id="@+id/module_expense"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/expenseModule"
+            android:title="Expense">
+            <menu>
+                <item
+                    android:id="@+id/submitExpense"
+                    android:title="Submit Expense" />
+                <item
+                    android:id="@+id/authorizeExpense"
+                    android:title="Authorize Expense" />
+                <item
+                    android:id="@+id/reimburseExpense"
+                    android:title="Reimburse Expense" />
+            </menu>
+        </item>
+    </group>
+
+    <!-- Module 7 -->
+    <group
+        android:id="@+id/module_performance_appraisal"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/performanceAppraisalModule"
+            android:title="Performance Appraisal">
+            <menu>
+                <item
+                    android:id="@+id/submitPerformanceAppraisal"
+                    android:title="Submit Performance Appraisal" />
+                <item
+                    android:id="@+id/reviewPerformanceAppraisal"
+                    android:title="Review Performance Appraisal" />
+            </menu>
+        </item>
+    </group>
+
+
+</menu>
