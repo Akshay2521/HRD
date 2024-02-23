@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <!--Each item id should be same as in the nav_graph fragment id-->
     <item
         android:id="@+id/searchFragment"
-        android:title="Search"
-        android:icon="@android:drawable/ic_menu_search"/>
+        android:contentDescription="@string/search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/search" />
 
     <item
-        android:id="@+id/homeFragment"
-        android:title="Home"
-        android:icon="@drawable/ic_user"/>
+        android:id="@+id/dashboardFragment"
+        android:contentDescription="@string/home"
+        android:icon="@drawable/ic_user"
+        android:title="@string/home" />
 
     <item
+        android:contentDescription="@string/notification"
         android:id="@+id/notificationFragment"
-        android:title="Notification"
+        android:title="@string/notification"
         android:icon="@android:drawable/ic_notification_overlay"/>
-
-    <!--    <item-->
-    <!--        android:id="@+id/audioFragment"-->
-    <!--        android:title="Audio" />-->
 
 </menu>

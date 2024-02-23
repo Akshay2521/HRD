@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Each item id should be same as in the nav_graph fragment id-->
 
     <!--   Module 1-->
-    <group
-        android:id="@+id/module_org"
-        android:checkableBehavior="single">
-        <item
-            android:id="@+id/organization"
-            android:title="Organization">
-            <menu>
+
+    <item android:title="@string/organization">
+        <menu>
+            <group
+                android:id="@+id/moduleOrg"
+                android:checkableBehavior="single">
                 <item
-                    android:id="@+id/organization_profile"
-                    android:title="Organization Profile" />
+                    android:id="@+id/organizationProfileFragment"
+                    android:icon="@drawable/ic_reject"
+                    android:title="@string/organization_profile" />
                 <item
-                    android:id="@+id/location"
-                    android:title="Location" />
+                    android:id="@+id/locationFragment"
+                    android:title="@string/location" />
                 <item
                     android:id="@+id/holidayCalendar"
                     android:title="Holiday Calendar" />
@@ -33,9 +34,9 @@
                 <item
                     android:id="@+id/expenseCategory"
                     android:title="Expense Category" />
-            </menu>
+            </group>
+        </menu>
         </item>
-    </group>
 
     <!-- Module 2 -->
     <group
