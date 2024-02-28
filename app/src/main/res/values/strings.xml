@@ -2,4 +2,16 @@
     <string name="app_name">HRDOME</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="profile_avatar">Profile Avatar</string>
+    <string name="logout">Logout</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+    <string name="organization">Organization</string>
+    <string name="location">Location</string>
+    <string name="organization_profile">Organization Profile</string>
+    <string name="navigation_drawer_open">Hell</string>
+    <string name="navigation_drawer_close">Hello</string>
 </resources>

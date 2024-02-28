@@ -3,103 +3,49 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/dashboardFragment">
 
     <fragment
-        android:id="@+id/dashboard"
-        android:label="Dashboard"
-        tools:layout="@layout/activity_dashboard" />
+        android:id="@+id/loginFragment"
+        android:name="com.example.hrdome.login.LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_dashboard"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
 
-    <!--Organization-->
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.hrdome.DashboardFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_login"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.hrdome.NotificationFragment"
+        android:label="@string/notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.hrdome.SearchFragment"
+        android:label="@string/search"
+        tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/locationFragment"
-        android:name="com.example.hrdome.SideNavigation.Organization.LocationFragment"
-        android:label="Location"
+        android:name="com.example.hrdome.organization.LocationFragment"
+        android:label="@string/location"
         tools:layout="@layout/fragment_location" />
-
     <fragment
         android:id="@+id/organizationProfileFragment"
-        android:name="com.example.hrdome.SideNavigation.Organization.OrganizationProfileFragment"
-        android:label="Organization Profile"
+        android:name="com.example.hrdome.organization.OrganizationProfileFragment"
+        android:label="@string/organization_profile"
         tools:layout="@layout/fragment_organization_profile" />
-
-    <fragment
-        android:id="@+id/holidayCalendarFragment"
-        android:name="com.example.hrdome.SideNavigation.Organization.HolidayCalendarFragment"
-        android:label="HolidayCalendar"
-        tools:layout="@layout/fragment_holiday_calendar" />
-
-    <fragment
-        android:id="@+id/leaveTypeFragment"
-        android:name="com.example.hrdome.SideNavigation.Organization.LeaveTypeFragment"
-        android:label="Leave Type"
-        tools:layout="@layout/fragment_leave_type" />
-
-    <fragment
-        android:id="@+id/emailTemplateFragment"
-        android:name="com.example.hrdome.SideNavigation.Organization.EmailTemplateFragment"
-        android:label="Email Template"
-        tools:layout="@layout/fragment_email_template" />
-
-    <fragment
-        android:id="@+id/clientsFragment"
-        android:name="com.example.hrdome.SideNavigation.Organization.ClientsFragment"
-        android:label="Clients"
-        tools:layout="@layout/fragment_clients" />
-
-    <fragment
-        android:id="@+id/projectsFragment"
-        android:name="com.example.hrdome.SideNavigation.Organization.ProjectsFragment"
-        android:label="Projects"
-        tools:layout="@layout/fragment_projects" />
-
-    <fragment
-        android:id="@+id/expenseCategoryFragment"
-        android:name="com.example.hrdome.SideNavigation.Organization.ExpenseCategoryFragment"
-        android:label="Expense Category"
-        tools:layout="@layout/fragment_expense_category" />
-
-
-    <!--Users-->
-    <fragment
-        android:id="@+id/rolesFragment"
-        android:name="com.example.hrdome.SideNavigation.Users.RolesFragment"
-        android:label="Roles"
-        tools:layout="@layout/fragment_roles" />
-
-    <fragment
-        android:id="@+id/usersFragment"
-        android:name="com.example.hrdome.SideNavigation.Users.UsersFragment"
-        android:label="Users"
-        tools:layout="@layout/fragment_users" />
-
-    <!--Employees-->
     <fragment
         android:id="@+id/employeesFragment"
-        android:name="com.example.hrdome.SideNavigation.Employees.EmployeesFragment"
-        android:label="Employees"
+        android:name="com.example.hrdome.Employees.EmployeesFragment"
+        android:label="fragment_employees"
         tools:layout="@layout/fragment_employees" />
-    <fragment
-        android:id="@+id/leaveBalanceFragment"
-        android:name="com.example.hrdome.SideNavigation.Employees.LeaveBalanceFragment"
-        android:label="Leave Balance"
-        tools:layout="@layout/fragment_leave_balance" />
-
-    <!--Leaves-->
-    <fragment
-        android:id="@+id/submitLeaveFragment"
-        android:name="com.example.hrdome.SideNavigation.Leaves.SubmitLeaveFragment"
-        android:label="Submit Leave"
-        tools:layout="@layout/fragment_submit_leave" />
-    <fragment
-        android:id="@+id/authorizeLeaveFragment"
-        android:name="com.example.hrdome.SideNavigation.Leaves.AuthorizeLeaveFragment"
-        android:label="Authorize Leave"
-        tools:layout="@layout/fragment_authorize_leave" />
-    <fragment
-        android:id="@+id/reviewLeaveFragment"
-        android:name="com.example.hrdome.SideNavigation.Leaves.ReviewLeaveFragment"
-        android:label="Review Leave"
-        tools:layout="@layout/fragment_review_leave" />
-
 </navigation>

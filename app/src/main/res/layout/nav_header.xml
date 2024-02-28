@@ -1,10 +1,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rel_header"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="4dp" >
+    android:padding="4dp">
 
     <!-- Profile Section -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -31,7 +32,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginEnd="10dp"
-            android:contentDescription="Profile Image"
+            android:contentDescription="@string/profile_image"
             android:src="@drawable/ic_user"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -44,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
-            android:text="Akshay"
+            tools:text="Akshay"
             android:textSize="13sp"
             app:layout_constraintEnd_toStartOf="@+id/ic_down_arrow"
             app:layout_constraintTop_toBottomOf="@+id/img_user" />
@@ -55,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:background="@android:color/transparent"
-            android:contentDescription="Edit Profile"
+            android:contentDescription="@string/edit_profile"
             android:src="@drawable/ic_down_arrow"
             app:layout_constraintEnd_toEndOf="parent"
 
@@ -76,7 +77,7 @@
                 android:id="@+id/profileRow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:orientation="horizontal"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -86,6 +87,7 @@
                     android:layout_width="23dp"
                     android:layout_height="23dp"
                     android:src="@drawable/ic_user"
+                    android:contentDescription="@string/profile_avatar"
                     app:tint="@color/white" />
 
                 <!-- Profile TextView -->
@@ -106,7 +108,7 @@
                 android:id="@+id/editProfileRow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
                 android:orientation="horizontal"
 
@@ -118,6 +120,7 @@
                     android:layout_width="23dp"
                     android:layout_height="23dp"
                     android:src="@drawable/ic_user"
+                    android:contentDescription="TODO"
                     app:tint="@color/white" />
 
 
@@ -137,10 +140,10 @@
                 android:id="@+id/logoutRow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
                 android:orientation="horizontal"
-                app:layout_constraintTop_toBottomOf="@+id/editProfileRow">
+                app:layout_constraintTop_toBottomOf="@id/editProfileRow">
 
                 <ImageView
                     android:id="@+id/logoutImagePlaceholder"
@@ -150,12 +153,12 @@
                     app:tint="@color/white" />
 
                 <TextView
-                    android:id="@+id/txtSignOut"
+                    android:id="@+id/signOut"
                     style="@style/txt_font_12sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:text="Logout"
+                    android:text="@string/logout"
                     android:textSize="13sp" />
             </LinearLayout>
 
